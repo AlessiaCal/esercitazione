@@ -1,2 +1,4 @@
 2023-01-10 10:02:19 ERROR tv:43 - Input Mismatch error
 2023-01-10 10:07:41 INFO  tv:44 - Canale inserito: 45
+2023-01-10 10:37:55 INFO  tv:45 - Canale inserito: 5
+2023-01-10 10:38:13 ERROR tv:49 - Input Mismatch error
