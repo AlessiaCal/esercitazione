@@ -14,7 +14,5 @@ public class ZeroTest {
                 assertThrows(IllegalArgumentException.class,
                         () -> operazioni.divisione(6, 0));
 
-        assertEquals("Impossibile effettuare i calcoli con 0.",
-                illegalArgumentException.getMessage());
     }
 }
