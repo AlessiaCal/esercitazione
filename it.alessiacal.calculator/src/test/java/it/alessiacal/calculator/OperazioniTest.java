@@ -4,6 +4,7 @@ package it.alessiacal.calculator;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import it.alessiacal.calculator.Calculator;
 import it.alessiacal.calculator.Operazioni;
@@ -11,7 +12,7 @@ import it.alessiacal.calculator.Operazioni;
 public class OperazioniTest {
 
 	int n1 = 10;
-	int n2 = 2;
+	int n2 = 0;
 	Operazioni operazioni = new Operazioni();
 	
 	@Test
@@ -47,6 +48,22 @@ public class OperazioniTest {
 		
 		float m= (n1+n2)/2;
 		assertEquals(m, operazioni.media(n1, n2));
+	}
+	
+	@Test
+    void zeroTest() {
+        Operazioni operazioni = new Operazioni();
+        IllegalArgumentException illegalArgumentException =
+                assertThrows(IllegalArgumentException.class,
+                        () -> operazioni.divisione(6, 0));
+
+    }
+	
+	@Test
+	void constructorTest() {
+		Operazioni operazioni = new Operazioni();
+		assertEquals(Operazioni.class, operazioni.getClass());
+		
 	}
 	
 }
