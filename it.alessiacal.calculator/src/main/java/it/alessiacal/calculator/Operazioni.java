@@ -14,9 +14,15 @@ public class Operazioni {
 		return sot;
 	}
 	
-	public float divisione(int n1, int n2) {
+	public float divisione(int n1, int n2) { 
+		
+		if (n2 == 0){
+            throw new IllegalArgumentException("Impossibile effettuare i calcoli con 0.");
+        } 
+		
 		float div = n1 / n2;
 		System.out.println("La divisione tra "+ n1 + " e "+ n2 +" è: "+div);
+				
 		return div;
 	}
 	

@@ -15,6 +15,8 @@ public class Calculator {
 		System.out.println("Inserisci il secondo valore");
 		int n2 = scanner.nextInt();
 		
+		
+		
 		Operazioni operazioni = new Operazioni();
 		
 		operazioni.somma(n1,n2);
